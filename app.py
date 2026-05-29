@@ -29,7 +29,7 @@ if prompt := st.chat_input("Type your message here..."):
     genai.configure(api_key=gemini_api_key)
     
     # Use the fast and free gemini-1.5-flash model
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-pro")
 
     # Add user message to chat history and display it
     st.session_state.messages.append({"role": "user", "content": prompt})
